@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>iLink Website Design</title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;
+0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;
+1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="webpage1.html"><img src="ilink_digital_logo.jpeg"
+                   height="70px" width="300px" ></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">PARTNERSHIPS</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="text-box">
+                <h1>Digitize,Optimize and Transform Your Business</h1>
+                <p>Propel your Digital transformation journey with our next-generation solutions</p>
+                <a href="" class="hero-btn">Visit Us to know More</a>
+            </div>
+
+        </section>
+
+        <!----------Services------------>
+        <section class="services">
+            <h1>Digital Transformation Services</h1>
+            <div class="row">
+                <div class="service-col">
+                    <img src="digital_experience.jpeg" height="220px" width="350px">
+                    <h3>Digital Experience</h3>
+                    <p>We help you navigate through the lifecycle of a Digital Transformation initiative</p>
+                </div>
+
+                <div class="service-col">
+                    <img src="data_AI.jpeg" height="220px" width="350px">
+                    <h3>Data & AI</h3>
+                    <p>Bridge information silos and transform data into actionable business insights</p>
+                </div>
+
+                <div class="service-col">
+                    <img src="security.jpeg" height="220px" width="350px">
+                    <h3>Security,Infrastructure and Managed Service</h3>
+                    <p>By assessing your needs, we deliver specific cloud solutions and seamlessly migrate your data</p>
+                </div>
+            </div>
+        </section>
+
+        <!-------JOB LOCATION----------------->
+        <section class="location">
+            <h1>iLink Digital Work Locations</h1>
+            <div class="row">
+                <div class="work-col">
+                    <img src="Chennai.jpg" height="420px">
+                    <div class="layer">
+                        <h3>CHENNAI</h3>
+                    </div>
+                </div>
+                <div class="work-col">
+                    <img src="pune.jpeg" height="420px">
+                    <div class="layer">
+                        <h3>PUNE</h3>
+                    </div>
+                </div>
+                <div class="work-col">
+                    <img src="Trichy.jpeg" height="420px">
+                    <div class="layer">
+                        <h3>TRICHY</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------JOB ROLES-------------->
+        <section class="roles">
+            <h1>Job Roles We Offer</h1>
+            <div class="row1">
+                <div class="roles-col">
+                    <img src="digital_experience.jpeg" height="220px" width="350px">
+                    <h3>Full Stack Developer</h3>
+                    
+                </div>
+
+                <div class="roles-col">
+                    <img src="data_AI.jpeg" height="220px" width="350px">
+                    <h3>Azure Cloud Devops</h3>
+                </div>
+
+                <div class="roles-col">
+                    <img src="security.jpeg" height="220px" width="350px">
+                    <h3>AI Engineer</h3>
+                </div>
+            </div>
+        </section>
+
+        <!----------Call for JOB-------------->
+        <section class="job">
+            <h1>Currently Recruiting for various roles</h1>
+            <a href="javascript:void(0);" onclick="sendEmail();" class="hero-btn">APPLY NOW</a>
+        </section>
+
+        <script>
+            document.getElementById('applyButton').addEventListener('click', function() {
+                sendEmail();
+            });
+        
+            function sendEmail() {
+                // Replace 'your-email@example.com' with the recipient email address
+                const recipientEmail = 'rajkumarars210@gmail.com';
+        
+                // Replace 'Job Application' with the subject of the email
+                const subject = 'Job Application';
+        
+                // You can customize the email body as needed
+                const body = 'I am applying for the data analyst position.';
+        
+                // Create a mailto link with the specified email, subject, and body
+                const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+                // Open the default email client with the pre-filled details
+                window.location.href = mailtoLink;
+            }
+        </script>
+
+
+
+        <!--------FOOTER-------------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>iLink believes our clients are entitled to a seamless transition through the lifecycle of a <br>digital transformation initiative with a lean approach and a focus on results.<br> We measure each engagement by its ROI and potential for new business opportunities for our customers.</p>
+        </section>
+
+        <!-------COPYRIGHTS---------------->
+        <section class="cpy">
+            <p>Copyright © 2023 iLink Digital, Inc. All Rights Reserved</p>
+            <a href="www.facebook.com"><img src="facebook.jpeg" width="20px" height="20px"></a>
+            <a href="www.instagram.com"><img src="instagram.jpeg" width="20px" height="20px"></a>
+        </section>
+
+    </body>
+</html>
